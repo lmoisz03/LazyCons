@@ -1,14 +1,14 @@
 {
   "name": "lazycons",
-  "version": "1.0.9",
+  "version": "1.1.5",
   "description": "Mini library for unique avatars generation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lmoisz03/lazycons"
+    "url": "https://github.com/lmoisz03/lazycons.git"
   },
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",

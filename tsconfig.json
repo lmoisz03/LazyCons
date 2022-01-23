@@ -1,0 +1,7 @@
+{
+  "extends": "@core/tsconfig/react-library.json",
+  "compilerOptions": {
+    "lib": ["es5", "es6", "dom"]
+  },
+  "exclude": ["node_modules"]
+}

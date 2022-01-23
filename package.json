@@ -1,0 +1,31 @@
+{
+  "name": "lazycons",
+  "version": "1.0.5",
+  "description": "Mini library for unique avatars generation",
+  "main": "index.js",
+  "files": [
+    "**/*.tsx",
+    "**/*.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "avatar",
+    "lazy",
+    "lazycons",
+    "react",
+    "react-native",
+    "next.js"
+  ],
+  "author": "lmoisz03",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.9.0",
+    "crypto-js": "^4.1.1",
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.0"
+  }
+}

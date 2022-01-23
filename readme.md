@@ -26,11 +26,12 @@ export default app = () => {
       maxFigures: 40, // Not greater than 40.
     },
   });
+  // The result is a data64 url of the avatar
   return <img src={avatar} />;
 };
 ```
 
-Next.js:
+Second example:
 
 ```js
 import genIcon from "lazycons";
@@ -46,14 +47,12 @@ export default app = () => {
         maxFigures: 40, // Not greater than 40.
       },
     });
+    // The result is a data64 url of the avatar
     setAvatar(avatar);
   }, []);
   return <img src={avatar} />;
 };
 ```
-
-Why is it different? Well, because next.js is server side rendered. It'll not be executed
-until the page is loaded. So, we couldnt access to 'document' object.
 
 ### Warning
 
@@ -62,9 +61,3 @@ generated avatar will be different from the previous one. This is because the
 library uses math operations that may change the result even if the seed is the
 same. I will try to fix this in the future. But i recommend to save the avatar in
 file in order to keep the avatar as unique as possible.
-
-### Note:
-
-I will make this library adaptable to environments. For example, you cant use it on node.js for now.
-I want to improve the algorithm for the generation of the avatars and make them more visually beautiful.
-When a new version of the library is released, it'll change the previous proccess of generating the avatar.
